@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+        <title>Churn Prediction</title>
+    </head>
+
+    <body>
+        <h1 class="text-center">Churn Prediction</h1>
+
+        <form class="form-padding" action="{{url_for('predict')}}" method="post">
+            <span class="label-padding">Credit Score</span><br>
+            <input type="text" name="credit_score" placeholder="credit_score e.g 600" request>
+            <br>
+            <span class="label-padding">Country</span><br>
+            <input type="text" name="country" placeholder="country e.g France" request>
+            <br>
+            <span class="label-padding">Gender</span><br>
+            <input type="text" name="gender" placeholder="gender e.g Male" request>
+            <br>
+            <span class="label-padding">Age</span><br>
+            <input type="text" name="age" placeholder="age e.g 40" request>
+            <br>
+            <span class="label-padding">Tenure</span><br>
+            <input type="text" name="tenure" placeholder="tenure e.g 4" request>
+            <br>
+            <span class="label-padding">Balance</span><br>
+            <input type="text" name="balance" placeholder="balance e.g 20000" request>
+            <br>
+            <span class="label-padding">Product Number</span><br>
+            <input type="text" name="products_number" placeholder="products_number eg 1" request>
+            <br>
+            <span class="label-padding">Credit Card</span><br>
+            <input type="text" name="credit_card" placeholder="credit_card eg 1" request>
+            <br>
+            <span class="label-padding">Active Member</span><br>
+            <input type="text" name="active_member" placeholder="active_member e.g 1" request>
+            <br>
+            <span class="label-padding">Estimated Salary</span><br>
+            <input type="text" name="estimated_salary" placeholder="estimated_salary e.g 7000.0" request>
+            <br>
+            <button type="submit" class="btn-large">Predict Churn Prob</button>
+        </form>
+        <div>
+            <h2 class="text-center"> Probability of Churn is {{prediction}}</h2>
+        </div>
+        
+
+    </body>
+</html>
+
+<style>
+    .text-center{
+        text-align: center;
+    }
+
+    .label-padding  {
+        padding-right: 40px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .form-padding{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    input{
+        min-width: 200px;
+        line-height: 20px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .btn-large {
+        padding: 20px;
+        background-color: darkolivegreen;
+        color: white;
+        font-size: 16px;
+        margin-right: 40px;
+    }
+
+    .answer-style {
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
