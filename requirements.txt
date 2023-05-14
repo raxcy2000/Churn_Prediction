@@ -1,0 +1,11 @@
+jupyter
+pandas
+numpy
+scikit-learn
+seaborn
+matplotlib
+requests
+streamlit
+keras
+torch==1.13.1
+torchvision==0.14.1
