@@ -1,11 +1,11 @@
 # Churn_Prediction
 
-### Introduction
+## Introduction
 
 Bank Customer Churn - Predict if a customer will leave or stay
 
 
-### Dataset: 
+## Dataset: 
 
 Bank Customer Churn Dataset available [here](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset). It consist of 10,000 rows and 12 columns
 
@@ -15,7 +15,7 @@ customer_id, credit_score, country, gender, age, tenure, balance, products_numbe
 
 The `customer id` is unused, `churn` is the target variable while the other features are used as input. 
 
-### Environment Setup
+## Environment Setup
 
 Create a `conda` environment
 
@@ -34,7 +34,7 @@ Install required packages in the environment using **requirements.txt** file.
 ```python
 pip install -r requirements.txt
 ```
-### Project Structure
+## Project Structure
 ```
 Churn Prediction
 |--README.md
