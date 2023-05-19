@@ -63,7 +63,7 @@ Churn Prediction
 
 ## Model Deployment
 
-Deployment is done using [Streamlit](https://streamlit.io/) and Flask.
+Deployment is done using [Streamlit](https://streamlit.io/) FastAPI and Flask.
 
 ```python
 streamlit run streamlit_app.py
@@ -77,3 +77,4 @@ python flask_app.py
 
 - [Kaggle - Bank Customer Churn Dataset](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset)
 - [Streamlit](https://streamlit.io/)
+- FastAPI - 
