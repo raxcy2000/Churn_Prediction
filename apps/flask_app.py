@@ -14,7 +14,6 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def hello_world():
-    print('victor '*10)
     return render_template('index.html')
 
 
